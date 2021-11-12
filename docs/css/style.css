@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgba(243, 243, 243, 1);
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    height: 100px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 35px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    color: rgba(243, 243, 243, 1);
+}
+
+header li {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* MAIN */
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    margin-bottom: 35px;
+}
+
+.card {
+    /* border: 1px solid rebeccapurple; */
+    min-width: 490px;
+    min-height: 350px;
+    border-radius: 5px;
+}
+
+.card-left {
+    background-image: url('../img/delivery.jpg');
+}
+
+.card-left h2, .card-right h2 {
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(252, 32, 12, 1);
+}
+
+.card-left h2 span:nth-child(2) {
+    color: rgba(243, 243, 243, 1);
+}
+
+.card-right {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.top-pizzas-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 51px;
+    padding-top: 25px;
+}
+
+.top-pizzas-left h3, .top-pizzas-left ol li {
+    color: rgba(34, 34, 34, 1);
+    font-weight: 700;
+}
+
+.top-pizzas-left h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.top-pizzas-left ol {
+    margin-inline-start: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-pizzas-left ol li {
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#home {
+    order: -2;
+}
+
+#contact {
+    order: -1;
+}
